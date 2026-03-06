@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lounge Guitar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+</style>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "LCPd2H90ZgBCkna-U",
+      });
+   })();
+</script>
+<script src="script.js"></script>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">LoungeGuitar</a>
+    <!-- navbar links på sm skærme fjernes de -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Om os</a>
+      <a href="#menu" class="w3-bar-item w3-button">Videoer</a>
+      <a href="#contact" class="w3-bar-item w3-button">Kontakt os</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="header_img.png" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+  </div>
+</header>
+
+<!-- Indhold -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Om os -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="img1.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Om os</h1><br>
+      <h5 class="w3-center">Livemusik til dit arrangement</h5>
+      <p class="w3-large">Vi er en guitarduo, der har spillet sammen i over 15 år. Med udgangspunkt i jazz, bossa nova og gypsy jazz skaber vi en stemning, der er rolig, varm og velkommende. Vores musik fungerer som et levende bagtæppe, der understøtter rummet og samtalen uden at tage fokus.
+</p><br>
+      <p class="w3-large" w3-text-grey w3-hide-medium>Vi søger at løfte stemningen uden at dominere og tilbyder et alternativ til den gængse DJ eller jazzpianist. Musikken kan tilpasses efter behov, fra et velkomstsæt på 30 minutter til en hel baggrundskoncert på 1 til 2 timer. Den skaber en naturlig og indbydende atmosfære omkring arrangementet.</p>
+    </div>
+  </div>
+
+  <hr>
+  
+  <!-- Videoer -->
+  <div class="w3-row w3-padding-64" id="menu">
+      <h1 class="w3-center">Videoer</h1>
+      <br><br>
+<!--Her skal der være videoer-->  
+<div class="w3-center">
+  <video controls src="Video1.mp4" width="95%"></video>
+</div>
+
+  </div>
+
+  <hr>
+
+  <!-- Kontakt os -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <h1>Kontakt os</h1><br>
+    <p>Noget om at kontakte os.</p>
+    <p class="w3-text-blue-grey w3-large"><b>pcguitarlounge@gmail.com</b></p>
+    <p>Vi ser frem til at høre fra dig!</p>
+    
+  
+    <form>
+      <p><input class="w3-input w3-padding-16" type="text" id="name" placeholder="Dit Navn" required></p>
+      <p><input class="w3-input w3-padding-16" type="text" id="email" placeholder="Din email" required></p>
+      <p><input class="w3-input w3-padding-16" type="text" id="subject" placeholder="Emne" required></p>
+      <p><input class="w3-input w3-padding-16" type="text" id="message" placeholder="Skriv din besked her" required></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit" onclick="sendMail()">SEND BESKED</button></p>
+    </form> 
+
+  </div>
+  
+<!-- Slut indhold -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32">
+  <p>Følg os på <a href="https://www.instagram.com" title="Instagram" target="_blank" class="w3-hover-text-green">Instagram</a> <img src="Instagram_icon.png" width=20px; </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {
+  font-family: Georgia, Serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+.w3-image{
+  opacity: 0.8
+}
